@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TetSet | Главная</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f0ff;
+            color: #333;
+        }
+        
+        .header {
+            background-color: #6a5acd; /* Лазурно-сиреневый */
+            padding: 10px 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            width: 960px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .search-bar {
+            width: 300px;
+            padding: 5px;
+            border: none;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .nav-button {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+        
+        .nav-button:hover {
+            background-color: #5d4ac0;
+        }
+        
+        /* основа в две колонки */
+        .main-content {
+            width: 960px;
+            margin: 20px auto;
+            display: flex;
+            gap: 20px;
+        }
+        
+        /*левацкое меню */
+        .left-sidebar {
+            width: 200px;
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+        
+        .sidebar-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .sidebar-menu li {
+            margin-bottom: 10px;
+        }
+        
+        .sidebar-menu a {
+            text-decoration: none;
+            color: #5d4ac0;
+            display: block;
+            padding: 5px;
+        }
+        
+        .sidebar-menu a:hover {
+            background-color: #f0e8ff;
+        }
+        
+        /* лента */
+        .feed {
+            flex: 1;
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+        }
+        
+        .post {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e8e0ff;
+            padding-bottom: 15px;
+        }
+        
+        .post-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .post-avatar {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            background-color: #f0e8ff;
+        }
+        
+        .post-author {
+            font-weight: bold;
+            color: #5d4ac0;
+        }
+        
+        .post-text {
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        
+        .post-actions {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .post-action {
+            color: #777;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        
+        .post-action:hover {
+            text-decoration: underline;
+            color: #5d4ac0;
+        }
+        
+        /*реки типа*/
+        .right-sidebar {
+            width: 200px;
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+        
+        .sidebar-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #777;
+            font-size: 14px;
+        }
+        
+        .friend-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .friend-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .friend-avatar {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            background-color: #f0e8ff;
+        }
+        
+        .friend-name {
+            font-size: 13px;
+            color: #5d4ac0;
+            text-decoration: none;
+        }
+        
+        .friend-name:hover {
+            text-decoration: underline;
+        }
+        
+        /* Футер */
+        .footer {
+            background-color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+            border-top: 1px solid #e8e0ff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">TetSet</div>
+            <input type="text" class="search-bar" placeholder="Поиск">
+            <div class="nav-buttons">
+                <a href="settings.html" class="nav-button">Настройки</a>
+                <a href="suport.html" class="nav-button">Поддержка</a>
+                <a href="tyda.html" class="nav-button">Поддержать Тету</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Основное содержимое -->
+    <div class="main-content">
+        <!-- Левая колонка (меню) -->
+        <div class="left-sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="profile.html">Мой профиль</a></li>
+                <li><a href="messages.html">Сообщения</a></li>
+                <li><a href="friends.html">Друзья</a></li>
+                <li><a href="groups.html">Сообщества</a></li>
+            </ul>
+        </div>
+        
+        <!-- Центральная колонка (лента) -->
+        <div class="feed">
+            <div id="sigCommentsBlock"></div>
+	<a href="https://t.me/teta0137" style="font-size: 0.6em;">Тут была ссылка от авторов системы комментариев</a>
+	<script type="text/javascript">
+		(function(){
+			var host_id = '7932';
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.async = true;
+			script.src = '//sigcomments.com/chat/?host_id='+host_id;
+			var ss = document.getElementsByTagName('script')[0]; 
+			ss.parentNode.insertBefore(script, ss);
+		})();
+	</script>
+        </div>
+        
+        <!-- Правая колонка (рекомендации) -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">Мои друзья</div>
+            <ul class="friend-list">
+                <li>
+                    <div class="friend-avatar"></div>
+                    <a href="#" class="friend-name">Дима Тетавец</a>
+                </li>
+                <li>
+                    <div class="friend-avatar"></div>
+                    <a href="#" class="friend-name">Чара Бычара</a>
+                </li>
+                <li>
+                    <div class="friend-avatar"></div>
+                    <a href="#" class="friend-name">Диана Фейковна</a>
+                </li>
+            </ul>
+            
+            <div class="sidebar-title">Подписки</div>
+            <ul class="friend-list">
+                <li>
+                    <div class="friend-avatar"></div>
+                    <a href="#" class="friend-name">Teta officialetete</a>
+                </li>
+                <li>
+                    <div class="friend-avatar"></div>
+                    <a href="#" class="friend-name">ЦИКОРИЙ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Подвал -->
+    <footer class="footer">
+        © Самый позорный макет TetSet.
+    </footer>
+</body>
+</html>
