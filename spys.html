@@ -54,6 +54,10 @@
         color: inherit;
         display: block;
     }
+
+    .hidden {
+        display: none;
+    }
     
     .member-card:hover {
         transform: translateY(-5px);
@@ -118,8 +122,8 @@
         font-style: italic;
     }
 
-    .ny-tipa {
-        .block { width: 50%; margin: 0 auto; }
+    .da-da {
+        text-decoration: none;
     }
 </style>
 </head>
@@ -208,11 +212,19 @@
         <img class="member-image" src="форма.jpg" alt="Исчезающий парен">
     </a>
 
- <a href="https://t.me/teta0137" class="member-card">
-        <h2 class="member-name" style="color: #000000;">Тета0137</h2>
-        <p class="member-description">НАЖИМАЙ ПЕЖЕ</p>
-        <img class="member-image" src="коттеты.jpg" alt="Тета">
+ <div id="block1" class="member-card">
+    <h2 class="member-name" style="color: #000000;">Тета0137</h2>
+    <p class="member-description">НАЖИМАЙ ПЕЖЕ</p>
+    <img class="member-image" src="коттеты.jpg" alt="Тета">
+</div>
+
+ <div id="block2" class="member-card hidden">
+    <a href="t.me/teta0137" class="da-da">
+    <h2 class="member-name" style="color: #000000;">ТЫ НАШЛА ПАСХАХАЛАЧКУ</h2>
+    <p class="member-description">АШАЛЕТЬ БЛИН</p>
+    <img class="member-image" src="пасхалачка.jpg" alt="Тета">
     </a>
+</div>
 
     <a href="https://t.me/teta0137" class="member-card">
         <h2 class="member-name" style="color: #000000;">Заглушка</h2>
@@ -229,6 +241,18 @@
 </div>
 
 <p class="design-credit">Код этой страницы держиться на клее карандаше</p>
+
+<script>
+    document.getElementById('block1').addEventListener('click', function() {
+        this.classList.add('hidden');
+        document.getElementById('block2').classList.remove('hidden');
+    });
+
+    document.getElementById('block2').addEventListener('click', function() {
+        this.classList.add('hidden');
+        document.getElementById('block1').classList.remove('hidden');
+    });
+        </script>
 
 </body>
 </html>
